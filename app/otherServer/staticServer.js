@@ -9,11 +9,11 @@ if (app.isPackaged) {
 }
 console.log(staticPath)
 let html = new staticServer.Server(staticPath)
-require('http').createServer(function (request, response) {
+/*require('http').createServer(function (request, response) {
   request.addListener('end', function () {
     html.serve(request, response)
   }).resume()
-}).listen(8088)
+}).listen(8088)*/
 require('http').createServer(function (request, response) {
   request.addListener('end', function () {
     pictures.serve(request, response)

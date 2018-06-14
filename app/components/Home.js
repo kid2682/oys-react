@@ -8,7 +8,7 @@ type Props = {};
 
 export default class Home extends Component<Props> {
   componentDidMount () {
-    console.log('http://' + ip.address() + ':8088');
+    console.log('http://' + ip.address() + ':8090');
     QRCode.toCanvas(document.getElementById('test'), 'http://' + ip.address() + ':8088', function (error) {
       if (error) console.error(error)
       console.log('success!')
